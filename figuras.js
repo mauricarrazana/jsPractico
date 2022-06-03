@@ -1,54 +1,77 @@
+//Variables
+const pi = 3.14;
 
 //Código cuadrado
 console.group("Cuadrados")
-const ladoCuadrado = 5;
-console.log("Los lados del cuadrado miden: " + ladoCuadrado + "cm")
 
-const perimetroCuadrado = ladoCuadrado * 4;
-console.log("El perimetro del cuadrado miden: " + perimetroCuadrado + "cm")
+function perimetroCuadrado(lado){
+    return lado * 4
+}
 
-const areaCuadrado = ladoCuadrado * ladoCuadrado;
-console.log("El area del cuadrado mide: " + areaCuadrado + "cm^2")
+function areaCuadrado(lado){
+    return lado * lado;
+}
 
 console.groupEnd()
 
 //Código triangulo
 console.group("Triangulos")
-const ladoTriangulo1 = 6;
-const ladoTriangulo2 = 6;
-const baseTriangulo = 4;
-const alturaTriangulo = 5;
 
-console.log("Los lados del triangulo miden: " 
-    + ladoTriangulo1
-    + "cm ," 
-    + ladoTriangulo2 
-    + "cm y "  
-    + baseTriangulo 
-    + "cm."
-    + " La altura es de " + alturaTriangulo
-    + "cm"
-    )
+function perimetroTriangulo(lado1, lado2, base){
+    return lado1 + lado2 + base;
+}
 
-const perimetroTriangulo = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo
-console.log("El perimetro del triangulo es de " + perimetroTriangulo + "cm")
-
-const areaTriangulo = (baseTriangulo * alturaTriangulo) /2
-console.log("El area del triangulo es de " + areaTriangulo + "cm^2")
+function areaTriangulo(base, altura){
+    return (base * altura) /2;
+}
 
 console.groupEnd()
 
 //Codigo circulos
 console.group("Circulos")
 
-const diametro = 6;
-const radio = 6;
-const pi = 3.14;
+function diametroCirculo(radio){
+    return radio * 2;
+}
 
-const circunferencia = diametro * pi
-console.log ("La circunferencia del circulo es de " + circunferencia + "cm" )
+function circunferencia(radio){
+    const diametro = diametroCirculo(radio);
+    return diametro * pi;
+}
 
-const areaCirculo = (radio * radio) * pi
-console.log("El area del circulo es de " + areaCirculo + "cm^2")
+function areaCirculo(radio){
+    return (radio * radio) * pi;
+}
 
 console.groupEnd()
+
+
+//HTML
+
+function calcularPerimetroCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const perimetro = perimetroCuadrado(value);
+    Swal.fire({
+        title: 'El perimetro de su cuadrado es igual a ' + perimetro,
+        icon: 'success',
+        confirmButtonText: 'Ok',
+        confirmButtonColor: '#C0392B',
+    })
+    }
+
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("InputCuadrado")
+    const value = input.value;
+
+    const area = areaCuadrado(value);
+    Swal.fire({
+        title: 'El area de su cuadrado es igual a ' + area,
+        icon: 'success',
+        confirmButtonText: 'Ok',
+        confirmButtonColor: '#C0392B',
+    })
+    
+}
