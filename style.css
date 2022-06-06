@@ -72,7 +72,7 @@ section h2{
 
 .inputBox{
     font-family: 'Poppins', sans-serif;
-    padding: 5%;
+    padding: 3%;
 }
 
 input{
@@ -81,9 +81,6 @@ input{
     text-align: center;
 }
 
-.buttonBox{
-
-}
 
 button{
     padding: 2%;
@@ -93,9 +90,15 @@ button{
     background-color: #C0392B;
     cursor: pointer;
     margin: 30px;
+
 }
 
 
 .buttonBox :hover{
     background-color: #ce574a;
+}
+
+
+.areaTriangulo h2{
+    padding: 3%;
 }

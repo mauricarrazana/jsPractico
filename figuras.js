@@ -48,6 +48,8 @@ console.groupEnd()
 
 //HTML
 
+//Cuadrado
+
 function calcularPerimetroCuadrado(){
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
@@ -74,4 +76,41 @@ function calcularAreaCuadrado(){
         confirmButtonColor: '#C0392B',
     })
     
+}
+
+//Triangulo
+
+function calcularPerimetroTriangulo(){  
+    const lado1 = document.getElementById("inputTriangulo");
+    const lado2 = document.getElementById("inputTriangulo2");
+    const base = document.getElementById("inputTriangulo3");
+
+    const i1 = Number(lado1.value);
+    const i2 = Number(lado2.value);
+    const iB = Number(base.value);
+
+    const perimetro = perimetroTriangulo(i1, i2, iB);
+    Swal.fire({
+        title: 'El perimetro de su triangulo es igual a ' + perimetro,
+        icon: 'success',
+        confirmButtonText: 'Ok',
+        confirmButtonColor: '#C0392B',
+    })
+}
+
+
+function calcularAreaTriangulo(){
+    const base = document.getElementById("inputTriangulo4")
+    const altura = document.getElementById("inputTriangulo5")
+    
+    const iB = Number(base.value)
+    const iA = Number(altura.value)
+
+    const area = areaTriangulo(iB, iA);
+    Swal.fire({
+        title: 'El area de su triangulo es igual a ' + area,
+        icon: 'success',
+        confirmButtonText: 'Ok',
+        confirmButtonColor: '#C0392B',
+    })
 }
