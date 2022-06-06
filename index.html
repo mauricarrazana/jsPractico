@@ -13,11 +13,14 @@
     <title>Calculadora Figuras geométricas</title>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
         <h1 class="titulo">CALCULADORA DE FIGURAS GEOMETRICAS</h1>
         <p>Primer taller: curso practico JS</p>
     </header>
 
+    <!-- Navegador -->
     <nav>
         <ul>
             <li><a href="index.html">Cuadrados</a></li>
@@ -26,33 +29,32 @@
         </ul>
     </nav>
 
+    <!-- Seccion area/perimetro cuadrado -->
     <section>
-        <h2>Calcule la circunferencia de un circulo</h2>
+        <h2>Calcula el area y perímetro de un cuadrado</h2>
 
+        <!-- Form -->
         <form class="formulario" action="">
 
-            <label class="label" for="inputCirculo">
-                Escriba el radio de su circulo:
+            <label class="label" for="inputCuadrado">
+                Escribe cuánto mide cada lado de tu cuadrado:
             </label>
 
             <div class="inputBox">
-                <input id="inputCirculo" type="number">
+                <input id="InputCuadrado" type="number">
             </div>
 
+            <!-- Botones -->
             <div class="buttonBox">
-                <button type="button" onclick="calcularCircunferencia()">
-                    Calcular Circunferencia
+                <button type="button" onclick="calcularPerimetroCuadrado()">
+                    Calcular perímetro
                 </button>
 
-                <button type="button" onclick="calcularAreaCirculo()">
+                <button type="button" onclick="calcularAreaCuadrado()">
                     Calcular Area
                 </button>
-
             </div>
 
-
-
-            </div>
         </form>
     </section>
 
