@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="img/">
+    <title>Calculadora Figuras geométricas</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">CALCULADORA DE FIGURAS GEOMETRICAS</h1>
+        <p>Primer taller: curso practico JS</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="cuadrado_index.html">Cuadrados</a></li>
+            <li><a href="triangulos.html">Triangulos</a></li>
+            <li><a href="circulos.html">Circulos</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Calcule la circunferencia de un circulo</h2>
+
+        <form class="formulario" action="">
+
+            <label class="label" for="inputCirculo">
+                Escriba el radio de su circulo:
+            </label>
+
+            <div class="inputBox">
+                <input id="inputCirculo" type="number">
+            </div>
+
+            <div class="buttonBox">
+                <button type="button" onclick="calcularCircunferencia()">
+                    Calcular Circunferencia
+                </button>
+
+                <button type="button" onclick="calcularAreaCirculo()">
+                    Calcular Area
+                </button>
+
+            </div>
+
+
+
+            </div>
+        </form>
+    </section>
+
+    <script src="./figuras.js"></script>
+
+    
+</body>
+</html>

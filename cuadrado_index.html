@@ -13,44 +13,50 @@
     <title>Calculadora Figuras geométricas</title>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
         <h1 class="titulo">CALCULADORA DE FIGURAS GEOMETRICAS</h1>
         <p>Primer taller: curso practico JS</p>
     </header>
 
+    <!-- Navegador -->
     <nav>
         <ul>
-            <li><a href="cuadrado_idex.html">Cuadrados</a></li>
+            <li><a href="cuadrado_index.html">Cuadrados</a></li>
             <li><a href="triangulos.html">Triangulos</a></li>
             <li><a href="circulos.html">Circulos</a></li>
         </ul>
     </nav>
 
-<section>
-    <h2>Calcula el area y perímetro de un cuadrado</h2>
+    <!-- Seccion area/perimetro cuadrado -->
+    <section>
+        <h2>Calcula el area y perímetro de un cuadrado</h2>
 
-    <form class="formulario" action="">
+        <!-- Form -->
+        <form class="formulario" action="">
 
-        <label class="label" for="inputCuadrado">
-            Escribe cuánto mide cada lado de tu cuadrado:
-        </label>
+            <label class="label" for="inputCuadrado">
+                Escribe cuánto mide cada lado de tu cuadrado:
+            </label>
 
-        <div class="inputBox">
-            <input id="InputCuadrado" type="number">
-        </div>
+            <div class="inputBox">
+                <input id="InputCuadrado" type="number">
+            </div>
 
-        <div class="buttonBox">
-            <button type="button" onclick="calcularPerimetroCuadrado()">
-                Calcular perímetro
-            </button>
+            <!-- Botones -->
+            <div class="buttonBox">
+                <button type="button" onclick="calcularPerimetroCuadrado()">
+                    Calcular perímetro
+                </button>
 
-            <button type="button" onclick="calcularAreaCuadrado()">
-                Calcular Area
-            </button>
-        </div>
+                <button type="button" onclick="calcularAreaCuadrado()">
+                    Calcular Area
+                </button>
+            </div>
 
-    </form>
-</section>
+        </form>
+    </section>
 
     <script src="./figuras.js"></script>
 

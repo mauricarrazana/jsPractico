@@ -114,3 +114,35 @@ function calcularAreaTriangulo(){
         confirmButtonColor: '#C0392B',
     })
 }
+
+
+//Circulo
+
+function calcularCircunferencia (){
+    const radio = document.getElementById("inputCirculo");
+    const iR = Number(radio.value);
+
+    const circ = circunferencia(iR);
+
+    Swal.fire({
+        title: 'La circunferencia de su circulo es igual a ' + circ,
+        icon: 'success',
+        confirmButtonText: 'Ok',
+        confirmButtonColor: '#C0392B',
+    })
+}
+
+function calcularAreaCirculo (){
+    const radio = document.getElementById("inputCirculo");
+    const iR = Number(radio.value);
+
+    const circ = areaCirculo(iR);
+
+    Swal.fire({
+        title: 'El area de su circulo es igual a ' + circ,
+        icon: 'success',
+        confirmButtonText: 'Ok',
+        confirmButtonColor: '#C0392B',
+    })
+}
+
